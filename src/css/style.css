@@ -65,11 +65,33 @@ body {
     align-items: center;
     justify-content: center;
 }
+form div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    justify-content: center;
+}
+
+.warning {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--red);
+    align-self: flex-end;
+}
+
+.none {
+    display: none;
+}
 
 form input, main button{
     width: 80%;
     height: 5rem;
     margin-top: 2rem;
+}
+
+form input:first-child{
+    width: 100%;
 }
 
 form input {
@@ -99,8 +121,8 @@ form input::placeholder{
     border-radius: 4px;
 }
 
-.main .btn:hover{
-    opacity: 0.4;
+.main .btn:hover, form input:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -119,4 +141,8 @@ form input::placeholder{
     border: 2px var(--red) solid;
     background: url(../images/icon-error.svg) no-repeat 95%;
     padding-left: 15px;
+}
+
+.incorrect::placeholder{
+    color: var(--red);
 }

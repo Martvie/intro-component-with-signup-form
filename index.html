@@ -34,30 +34,45 @@
 
             <main class="main">
                 <form>
+
+                    <div id="first-name">
                     <input
                         type="name"
-                        id="first-name"
                         placeholder="First Name "
                     />
+
+                    <p class="warning none">First Name cannot be empty</p>
+                </div>
+
+                <div id="last-name">
                     <input
-                        type="name"
-                        id="last-name"
+                        type="name"                       
                         placeholder="Last Name "
-                        class="incorrect"
                     />
+
+                    <p class="warning none">Last Name cannot be empty</p>
+                </div>
+
+                <div id="email">
                     <input
-                        type="email"
-                        id="email"
+                        type="email"                       
                         placeholder="Email Address"
                     />
+
+                    <p class="warning none">Looks like this is not an email</p>
+                </div>
+
+                <div id="password">
                     <input
                         type="password"
-                        id="password"
                         placeholder=" Password"
                     />
+
+                    <p class="warning none">Password cannot be empty</p>
+                </div>
                 </form>
 
-                <button class="btn">Claim your free trial</button>
+                <button class="btn" onclick="validate()">Claim your free trial</button>
 
                 <p class="terms">
                     By clicking the button, you are agreeing to our
