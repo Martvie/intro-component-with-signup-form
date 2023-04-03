@@ -1,0 +1,122 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+
+    background: var(--red) url(../images/bg-intro-desktop.png) no-repeat center;
+}
+
+.text-wrapper {
+    width: 45rem;
+}
+
+.text-wrapper h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-wrapper p {
+    font-size: 1.6rem;
+    color: #ffffffd8;
+}
+
+.price, .main {
+    margin: 2rem;
+    width: 50rem;
+
+    box-shadow: 0px 10px 8px 0px var(--dark-blue);
+    border-radius: 1rem;
+}
+
+.price{
+    height: 6rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--blue);
+}
+
+.main {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+}
+
+.main, form {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, main button{
+    width: 80%;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+form input {
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    
+    padding: 2.5rem;
+    border-radius: 2px;
+    border: 1px var(--grayish-blue) solid;
+}
+
+form input::placeholder{
+    color: #000;
+    opacity: 0.6;
+}
+
+.main .btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+
+    letter-spacing: 1px;
+
+    background-color: var(--green);
+    border-radius: 4px;
+}
+
+.main .btn:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.main .terms {
+    margin-top: 2rem;
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+}
+
+.terms a {
+    color: var(--red);
+    font-weight: 800;
+}
+
+.incorrect {
+    border: 2px var(--red) solid;
+    background: url(../images/icon-error.svg) no-repeat 95%;
+    padding-left: 15px;
+}
